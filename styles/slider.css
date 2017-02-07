@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Marcellus+SC');
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Marcellus SC', serif;
+}
+
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #4f5f56;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  color: #000;
+
+  background-color:#fff;
+  box-shadow: 0 0 100px 30px #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+}
+
+header label {
+  cursor: pointer;
+  display: inline-block;
+  line-height:3em;
+  font-size: 1.667em;
+  font-weight: bold;
+  padding: 0 1em;
+  transition: background-color 0.4s ease ;
+}
+
+header label:hover {
+  transition: background-color 0.4s ease-in-out ;
+  color:#fff;
+  background-color: #000;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-color: black;
+  background-position:  50% 50%;
+  background-size: cover;
+  transition: left 0.7s ease-in-out .7s ;
+}
+
+.slide-one {
+  background-image: url("https://static.pexels.com/photos/120271/pexels-photo-120271.jpeg");
+}
+.slide-two{
+  background-image: url("https://www.escapemotions.com/gallery/pictures/Black_and_White_by_Akuryo_(20.01.2010).jpg");
+}
+.slide-three {
+  background-image: url("http://powellong.com/data/wallpapers/228/WDF_2642789.jpg");
+}
+.slide-four {
+  background-image: url("https://iso.500px.com/wp-content/uploads/2014/06/20481.jpg");
+}
+
+[id^='slide']:checked + .slide {
+  z-index:100;
+  left: 0;
+  transition: left .7s ease-in-out;
+}
+
+.slide h1 {
+  background-color: rgba(0,0,0,0.6);
+  position:absolute;
+  top:100%;
+  opacity:0.5;
+  font-size: 70px;
+  left:100%;
+  color:#fff;
+  transition: opacity 1.6s ease, top 0.6s ease .2s, left 0.1s ease 1s;
+}
+
+[id^='slide']:checked + .slide h1 {
+  top:50vh;
+  z-index:100;
+  left:40vw;
+  opacity: 1;
+  transition: opacity 1.6s ease, left 0.6s ease .5s;
+}
