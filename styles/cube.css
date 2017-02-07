@@ -1,19 +1,19 @@
 #main-box {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   margin: 200px auto;
-  perspective: 800px;
+  perspective:800px;
 }
 
 #box {
   width: 400px;
-  animation:boxRotation 10s linear infinite;
+  animation:boxRotation 15s linear infinite;
   transform-style: preserve-3d;
 }
 
 #box div {
   position: absolute;
-  width: 400px;
+  width:400px;
   height: 400px;
   font-size: 40px;
   text-align: center;
@@ -21,37 +21,44 @@
 
 #front {
   transform: translateZ(200px);
-  background-color:#000 ;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/736x/3d/ca/6e/3dca6e2537995db05b2ccf4045ba9752.jpg');
+  background-size: cover;
 }
 
 #back {
   transform: rotateY(180deg) translateZ(200px);
-  background-color: #101010;
+  background-image: url('https://mariaot.files.wordpress.com/2010/09/img_2149.jpg');
+  background-size: cover;
 }
 
 #left {
   transform: rotateY(-90deg) translateX(-200px);
   transform-origin: left;
-  background-color: cadetblue;
+  background-image: url('http://greatinspire.com/wp-content/uploads/2013/07/Beautiful-Smile-Portraits-of-Monika-Zborowska-23.jpg');
+  background-size: cover;
 }
 
 #right{
   transform: rotateY(90deg) translateX(200px);
   transform-origin: right;
-  background-color: #101010;
+  background-image: url('http://s.likes-media.com/img/b31d0c55f08460649f5d8d416d9c8351.600x.jpg');
+  background-size: cover;
 }
 
 #bottom {
   transform: rotateX(90deg) translateY(200px);
   transform-origin: bottom;
-  background-color: cadetblue;
+  background-color: transparent;
 }
 
 #top {
   transform: rotateX(-90deg) translateY(-200px);
   transform-origin: top;
-  background-color: red;
+  background-color: transparent;
 }
+
+
+
 
 @keyframes boxRotation {
   0% {
