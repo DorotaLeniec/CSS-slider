@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>css-slider</title>
   <link rel="stylesheet" href="styles/slider.css">
+  <link rel="stylesheet" href="styles/cube.css">
 </head>
 <body>
 <div class="wrap">
@@ -15,7 +16,7 @@
     <label for="slide-4-trigger">Slide Four</label>
   </header>
 
-  <input type="radio" id="slide-1-trigger" name="slide" checked>
+  <input type="radio" id="slide-1-trigger" name="slide" >
   <section class="slide slide-one">
     <h1>Header 1</h1>
   </section>
@@ -27,9 +28,18 @@
   <section class="slide slide-three">
     <h1>Header 3</h1>
   </section>
-  <input type="radio" id="slide-4-trigger" name="slide">
+  <input type="radio" id="slide-4-trigger" name="slide" checked>
   <section class="slide slide-four">
-    <h1>Header 4</h1>
+   <div id="main-box">
+     <div id="box">
+       <div id="front">Html</div>
+       <div id="back">Css</div>
+       <div id="left">JavaScript</div>
+       <div id="right">React</div>
+       <div id="top">jQuery</div>
+       <div id="bottom">Bootstrap</div>
+     </div>
+   </div>
   </section>
 
 </div>

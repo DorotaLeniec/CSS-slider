@@ -55,7 +55,7 @@ header label:hover {
   left: 100%;
   z-index: 10;
   padding: 8em 1em 0;
-  background-color: black;
+  background-color: #fff;
   background-position:  50% 50%;
   background-size: cover;
   transition: left 0.7s ease-in-out .7s ;
@@ -71,7 +71,7 @@ header label:hover {
   background-image: url("http://powellong.com/data/wallpapers/228/WDF_2642789.jpg");
 }
 .slide-four {
-  background-image: url("https://iso.500px.com/wp-content/uploads/2014/06/20481.jpg");
+
 }
 
 [id^='slide']:checked + .slide {
